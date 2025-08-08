@@ -26,5 +26,4 @@ jobs:
 
           # Copia todos os branches e tags para o repositório de destino
           git push destination --all --force
-          git push destination --tags --force
-          
+          git push destination --tags --force 
