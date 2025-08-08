@@ -23,7 +23,8 @@ jobs:
           
           # Adiciona o repositório de destino como um "remote"
           git remote add destination https://x-access-token:${{ secrets.DESTINATION_REPO_SECRET }}@github.com/julianocribeiro/floatingmemories2.git
-          
+
           # Copia todos os branches e tags para o repositório de destino
           git push destination --all --force
           git push destination --tags --force
+          
