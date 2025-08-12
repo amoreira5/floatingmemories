@@ -1,0 +1,29 @@
+name: Sincronizar Repositório
+
+on:
+  push:
+    branches:
+      - main  # Altere para a branch principal do seu repositório de origem
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sincronizar com Repositório de Destino
+        run: |
+          # Configura o Git
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # Adiciona o repositório de destino como um "remote"
+          git remote add destination https://x-access-token:${{ secrets.DESTINATION_REPO_SECRET }}@github.com/julianocribeiro/floatingmemories2.git
+
+          # Copia todos os branches e tags para o repositório de destino
+          git push destination --all --force
+          git push destination --tags --force 
