@@ -1,0 +1,38 @@
+arc1 {
+
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+arc2 {
+    text-align: center;
+    font-weight: normal;
+    /*font-size: 30px;      /* aumenta o tamanho da fonte */
+    width: 80vw;          /* aumenta a largura do h2 */
+    margin-top: 5px auto;    /* centraliza e adiciona espaçamento */
+}
+
+svg + svg {
+    margin-top: -30px; /* valor negativo para aproximar, ajuste conforme necessário */
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: oscilar 3s infinite ease-in-out;
+     max-width: 90vw;
+    height: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #FEF1FB;
+}
