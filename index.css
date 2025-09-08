@@ -25,6 +25,7 @@ img {
     animation: oscilar 3s infinite ease-in-out;
      max-width: 90vw;
     height: auto;
+    border-radius: 20px; /* ajuste o valor para mais ou menos arredondado */
 }
 body {
     display: flex;
@@ -34,5 +35,28 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #FEF1FB;
+    background-color: #E4ACF5;
+}
+
+.botoes {
+    display: flex;
+    gap: 16px;           /* Espaço entre os botões */
+    justify-content: center;
+    margin-top: 24px;    /* Espaço acima dos botões */
+}
+
+.botoes button {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #e2d1f6;
+    color: #020000;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 150px;
+}
+
+.botoes button:hover {
+    background: #9483a1;
 }
