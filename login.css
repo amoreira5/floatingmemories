@@ -1,0 +1,68 @@
+arc1 {
+
+    margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+arc2 {
+    text-align: center;
+    font-weight: normal;
+    /*font-size: 30px;      /* aumenta o tamanho da fonte */
+    width: 80vw;          /* aumenta a largura do h2 */
+    margin-top: 5px auto;    /* centraliza e adiciona espaçamento */
+}
+
+svg + svg {
+    margin-top: -30px; /* valor negativo para aproximar, ajuste conforme necessário */
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: oscilar 3s infinite ease-in-out;
+     max-width: 90vw;
+    height: auto;
+    border-radius: 20px; /* ajuste o valor para mais ou menos arredondado */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #E4ACF5;
+}
+
+.botoes {
+    display: flex;
+    gap: 16px;           /* Espaço entre os botões */
+    justify-content: center;
+    margin-top: 24px;    /* Espaço acima dos botões */
+}
+
+.botoes button {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #e2d1f6;
+    color: #020000;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 150px;
+}
+
+.botoes button:hover {
+    background: #9483a1;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaço entre os campos */
+    align-items: center; /* Opcional: centraliza os campos */
+}
