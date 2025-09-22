@@ -66,3 +66,51 @@ body {
     gap: 16px; /* Espaço entre os campos */
     align-items: center; /* Opcional: centraliza os campos */
 }
+.menu-hamburguer {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu-hamburguer span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #a259f7;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.menu-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f7f3ff;
+    width: 200px;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: 2px 0 8px #e2d1f6;
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 999;
+}
+.menu-nav a {
+    color: #7a1fc2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.menu-nav a:hover {
+    background: #e2d1f6;
+}
+.menu-nav.active {
+    display: flex;
+}
